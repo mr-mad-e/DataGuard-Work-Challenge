@@ -26,10 +26,13 @@
 
         <template v-slot:append>
           <div class="d-flex pa-4">
-            <div>All plugins {{ enabled ? 'enabled' : 'disabled' }}</div>
+            <div class="font-weight-bold primary--text">
+              All plugins {{ enabled ? 'enabled' : 'disabled' }}
+            </div>
             <v-switch
               inset
-              class="mt-0 pt-0 ml-2"
+              class="mt-0 pt-0 ml-auto"
+              :color="enabled ? 'success' : 'error'"
               @change="disableAllPlugins()"
               v-model="enabled"
             />

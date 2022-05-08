@@ -19,6 +19,10 @@ export default new Vuex.Store({
   },
   mutations: {
     setTabs(state, tabs){
+      tabs.reduce((obj, tab) => {
+        obj[tab.id] = tab.title;
+        return obj;
+      }, tabs);
       state.tabs = tabs;
     },
     setPlugins(state, plugins){

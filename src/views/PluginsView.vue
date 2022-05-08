@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card-title class="px-0 primary--text">{{ tabsData[$route.name] }} Plugins</v-card-title>
+    <v-card-title class="px-0 primary--text">{{ tabs[$route.name] }} Plugins</v-card-title>
 
     <v-row>
       <template v-for="(plugin, index) in plugins">
@@ -42,21 +42,8 @@ import { mapGetters } from 'vuex';
 export default {
   name: 'PluginsView',
 
-  data() {
-    return {
-      tabsData: {},
-    };
-  },
-
   computed: {
     ...mapGetters(['tabs', 'plugins']),
-  },
-
-  created() {
-    this.tabsData = this.tabs.reduce((obj, tab) => {
-      obj[tab.id] = tab.title;
-      return obj;
-    }, {});
   },
 };
 </script>

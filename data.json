@@ -1,0 +1,125 @@
+{
+  "tabs": [
+    {
+      "id": "tab1",
+      "title": "Marketing",
+      "icon": "mdi-dots-grid"
+    },
+    {
+      "id": "tab2",
+      "title": "Finance",
+      "icon": "mdi-finance"
+    },
+    {
+      "id": "tab3",
+      "title": "Personnel",
+      "icon": "mdi-clipboard-check-outline"
+    }
+  ],
+  "plugins": [
+    {
+      "id": "plugin1",
+      "tab": "tab1",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 1",
+      "description": "Enim cillum tempor veniam do laboris excepteur laborum fugiat aute magna cillum."
+    },
+    {
+      "id": "plugin2",
+      "tab": "tab1",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 2",
+      "description": "Proident sunt consequat exercitation incididunt cupidatat quis ut ut eu ullamco nisi excepteur aliqua."
+    },
+    {
+      "id": "plugin3",
+      "tab": "tab1",
+      "active": false,
+      "disabled": true,
+      "title": "Plugin 3",
+      "description": "Amet ea quis qui reprehenderit laborum aute magna incididunt et dolore."
+    },
+    {
+      "id": "plugin4",
+      "tab": "tab1",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 4",
+      "description": "Sunt culpa labore consequat eu veniam laborum."
+    },
+    {
+      "id": "plugin5",
+      "tab": "tab1",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 5",
+      "description": "Proident laborum sint nisi enim non aliqua incididunt dolor voluptate tempor."
+    },
+    {
+      "id": "plugin6",
+      "tab": "tab1",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 6",
+      "description": "Qui cillum velit elit incididunt excepteur nostrud occaecat."
+    },
+    {
+      "id": "plugin7",
+      "tab": "tab2",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 7",
+      "description": "Culpa excepteur aliquip adipisicing sunt sunt proident aute eiusmod."
+    },
+    {
+      "id": "plugin8",
+      "tab": "tab2",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 8",
+      "description": "Eiusmod ex labore cillum elit."
+    },
+    {
+      "id": "plugin9",
+      "tab": "tab2",
+      "active": false,
+      "disabled": true,
+      "title": "Plugin 9",
+      "description": "Ut sit sit fugiat qui ullamco ea ea id qui esse magna."
+    },
+    {
+      "id": "plugin10",
+      "tab": "tab2",
+      "active": false,
+      "disabled": false,
+      "title": "Plugin 10",
+      "description": "Aliqua tempor nostrud occaecat enim nulla proident nostrud enim adipisicing pariatur velit."
+    },
+    {
+      "id": "plugin11",
+      "tab": "tab3",
+      "active": true,
+      "disabled": false,
+      "title": "Plugin 11",
+      "description": "Consectetur sit amet velit cillum sunt cillum sunt."
+    },
+    {
+      "id": "plugin12",
+      "tab": "tab3",
+      "active": false,
+      "disabled": true,
+      "title": "Plugin 12",
+      "description": "Exercitation in aute ut ex aliqua ea."
+    },
+    {
+      "id": "plugin13",
+      "tab": "tab3",
+      "active": false,
+      "disabled": false,
+      "title": "Plugin 13",
+      "description": "Dolor laboris culpa ipsum aliqua velit mollit."
+    }
+  ]
+}

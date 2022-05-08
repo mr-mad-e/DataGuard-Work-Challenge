@@ -91,3 +91,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.v-input--selection-controls__input div {
+  color: #c63040 !important;
+}
+</style>

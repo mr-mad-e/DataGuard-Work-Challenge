@@ -13,6 +13,7 @@
 
               <div>
                 <v-switch
+                  inset
                   class="mt-0 mb-2 pt-0"
                   hide-details
                   :color="plugin.active ? 'success' : 'error'"

@@ -27,7 +27,12 @@
         <template v-slot:append>
           <div class="d-flex pa-4">
             <div>All plugins {{ enabled ? 'enabled' : 'disabled' }}</div>
-            <v-switch class="mt-0 pt-0 ml-2" @change="disableAllPlugins()" v-model="enabled" />
+            <v-switch
+              inset
+              class="mt-0 pt-0 ml-2"
+              @change="disableAllPlugins()"
+              v-model="enabled"
+            />
           </div>
         </template>
       </v-navigation-drawer>

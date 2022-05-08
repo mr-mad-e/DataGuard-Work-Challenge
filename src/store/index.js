@@ -28,7 +28,7 @@ export default new Vuex.Store({
   actions: {
     async fetchTabs({commit}) {
       try {
-        const response = await axios.get('http://localhost:3000/tabs');
+        const response = await axios.get('https://afternoon-hamlet-15466.herokuapp.com/tabs');
         if (response) {
           commit('setTabs', response.data)
         }
@@ -38,7 +38,7 @@ export default new Vuex.Store({
     },
     async fetchPlugins({commit}) {
       try {
-        const response = await axios.get('http://localhost:3000/plugins');
+        const response = await axios.get('https://afternoon-hamlet-15466.herokuapp.com/plugins');
         if (response) {
           commit('setPlugins', response.data)
         }
@@ -48,7 +48,7 @@ export default new Vuex.Store({
     },
     async updatePlugin(context, plugin) {
       try {
-        const response = await axios.patch(`http://localhost:3000/plugins/${plugin.id}`, plugin);
+        const response = await axios.patch(`https://afternoon-hamlet-15466.herokuapp.com/plugins/${plugin.id}`, plugin);
         if (response) {
           console.log(response);
         }

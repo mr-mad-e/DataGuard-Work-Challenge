@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app>
-      <v-navigation-drawer app permanent color="#f1f1f1">
+      <v-navigation-drawer app v-model="drawer" color="#f1f1f1">
         <v-list-item>
           <v-list-item-content>
             <v-list-item-title class="text-h4 py-4 primary--text">
@@ -32,9 +32,18 @@
         </template>
       </v-navigation-drawer>
 
+      <v-app-bar app elevation="1" v-if="$vuetify.breakpoint.xs">
+        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-spacer></v-spacer>
+
+        <v-toolbar-title>Data<b>Guard</b></v-toolbar-title>
+
+        <v-spacer></v-spacer>
+      </v-app-bar>
+
       <v-main>
         <v-container fluid>
-          <router-view  :plugins="plugins"></router-view>
+          <router-view :plugins="plugins"></router-view>
         </v-container>
       </v-main>
     </v-app>
@@ -50,6 +59,7 @@ export default {
   data() {
     return {
       enabled: true,
+      drawer: true,
     };
   },
 
